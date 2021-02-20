@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+:root {
+    --mapsize: 9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+.nav {
+    margin: 3vh auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav>div {
+    width: 20%;
+    height: 10vh;
+    border: 1px solid rgb(121, 121, 121);
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3vh auto 0;
+    width: 70vh;
+}
+
+.game div {
+    width: calc((100%)/var(--mapsize));
+    height: 50px;
+    border: 0.01px solid rgb(224, 216, 216);
+    text-align: center;
+    line-height: 50px;
+    font-size:1.6rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.game div button {
+    width: 100%;
+    height: 100%;
+}
